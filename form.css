@@ -1,0 +1,92 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+/* container */
+
+.form-body {
+
+    width: 70%;
+    height: 90%;
+    background: linear-gradient(to right, skyblue, yellow);
+    margin: 1rem 10rem;
+    
+    border-radius: 1rem;
+    font-family: "Helvetica Neue",
+        Helvetica,
+        Arial,
+        sans-serif;
+    font-weight: 300;
+}
+
+.header {
+    color: white;
+    padding-bottom: 3rem;
+}
+
+/* INPUT FIELD */
+#first-name,
+#last-name,
+#User-name,
+#pass-word,
+#confirm-pass {
+    width: 50%;
+    height: 2rem;
+    padding-left: 2rem;
+    /* text-align: center; */
+    font-size: 1rem;
+    border-radius: .5rem;
+    border: none;
+}
+#pass-word{
+    width: 40%;
+        height: 2rem;
+        /* padding-left: 1rem; */
+        /* text-align: center; */
+        font-size: 1rem;
+        border-radius: .5rem;
+        border: none;
+}
+/* CONTENT  */
+.content {
+
+    align-items: center;
+    text-align: center;
+    padding-top: 5rem;
+}
+/* PARAGRAPH */
+#para, #pass, #conf-pass{
+    font-size: .9rem;
+    color: red;
+    padding-left: .6rem;
+}
+#pass{
+    padding-left: 7rem;
+}
+.name {
+    padding-right: 1.5rem;
+    font-family: "Helvetica Neue",
+        Helvetica,
+        Arial,
+        sans-serif;
+    font-size: 1.4rem;
+    color: rgb(110, 24, 24);
+    font-weight: bolder;
+}
+/* media query  */
+#submit {
+    padding: .5rem 10rem;
+    margin-bottom: 3rem;
+    margin-top: 3rem;
+    background-color:chartreuse;
+    color:whitesmoke ;
+    border: none;
+    font-size: 1.3rem;
+}
+#eye-open{
+    margin-left: -2rem;
+    color: grey;
+    cursor: pointer;
+
+}

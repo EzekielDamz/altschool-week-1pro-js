@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <link rel="stylesheet" href="form.css" />
+    <title>Document</title>
+  </head>
+  <body>
+    <main class="form-body">
+      <div class="content">
+        <h1 class="header">Sign In Here</h1>
+
+        <label for="First name" class="name">First Name : </label>
+        <input
+          type="text"
+          placeholder=" enter firstname"
+          id="first-name"
+          required
+        /><br />
+        <br />
+        <label for="text " class="name">Last Name : </label>
+        <input
+          type="text"
+          placeholder=" enter lastname"
+          id="last-name"
+          required
+        />
+        <br /><br />
+        <label for="username" class="name"> User Name :</label>
+        <input type="text" placeholder="enter username" id="User-name" />
+        <p id="para"></p>
+        <br />
+        <br>
+        <label for="password" class="name"> Password : </label>
+          <input type="password" placeholder="enter password " id="pass-word" />
+          <span id="eye-open">&#128065;</span>
+          <p id="pass"></p>
+          <!-- <i class="fa fa-eye" id="eye-open"></i> -->
+        <br />
+        <br>
+
+        <label for="confirmPassword" class="name"> Confirm Password : </label>
+        <input type="password" placeholder="confirm your password" id="confirm-pass" />
+        <p id="conf-pass"></p>
+        <br />
+        <input type="submit" value="Sign In" id="submit" />
+      </div>
+    </main>
+  </body>
+  <script src="form.js"></script>
+</html>
