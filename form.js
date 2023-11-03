@@ -1,5 +1,7 @@
 //DOM Manipulation
 let validatePassword;
+let confirmPass;
+let passWord;
 
 const firstName = document.querySelector("#first-name");
 const lastName = document.querySelector("#last-name");
@@ -13,8 +15,7 @@ const pass = document.querySelector("#pass");
 const confPass = document.querySelector("#conf-pass");
 
 /// Submit function evenlisterner..
-signIn.addEventListener("click",  () => {
-  
+signIn.addEventListener("click", () => {
   firstUpperCase();
   lastUpperCase();
   validateUserName();
@@ -32,8 +33,8 @@ function firstUpperCase() {
     lastInput = lastName.value;
     alert(" First Name and Last Name Must be a upper case letter");
   } else {
-    firstName.value = " ";
-    lastName.value = " ";
+    firstName.value = "";
+    lastName.value = "";
     console.log(upper);
   }
   input = firstName.value;
@@ -49,11 +50,11 @@ function lastUpperCase() {
   //// check if input value is uppercase
 
   if (lastInput !== lastupper) {
-      input = firstName.value;
-      lastInput = lastName.value;
+    input = firstName.value;
+    lastInput = lastName.value;
   } else {
-        // firstInput.value = " ";
-        // lastName.value = " ";
+    // firstInput.value = " ";
+    // lastName.value = " ";
     console.log(lastupper);
   }
 }
@@ -65,59 +66,54 @@ const validateUserName = () => {
   /// username syntax
 
   const regex = /^(?=.*[a-zA-Z])(?=.*\d).+$/;
-///// condition to check if username is correct 
+  ///// condition to check if username is correct
   if (regex.test(validUser)) {
-    userNameDisplay.style.display = "none";
-    // firstInput.value = " ";
-    // lastName.value = " ";
-    // userInput.value = " ";
+    userInput.value = "";
+
   } else {
-    // input = firstInput.value;
-    input = firstInput.value;
+    
+    input = firstName.value;
     lastInput = lastName.value;
     validUser = userInput.value;
     userNameDisplay.textContent = `***username must include number and alphabet`;
   }
-}
+};
 
+///// VALIDATE PASSWORD
+validatePassword = () => {
+  // Get the value of the password input field
+let confirmPass = confirmPassword.value;
+  let passWord = password.value;
 
+  //// valiate password pattern
+  let validPass =
+    /^(?=.*[a-zA-Z])(?=.*\d)(?=.*[!@#$%^&*])[a-zA-Z\d!@#$%^&*]{8,}$/;
 
-  ///// VALIDATE PASSWORD
-  validatePassword = () => {
-    // Get the value of the password input field
-    let passWord = password.value;
-
-    //// valiate password pattern
-    let validPass =
-      /^(?=.*[a-zA-Z])(?=.*\d)(?=.*[!@#$%^&*])[a-zA-Z\d!@#$%^&*]{8,}$/;
-
+  //confirm if password is correct
+  if (validPass.test(passWord)) {
+    password.value = "";
+  } else if (confirmPass === passWord) {
     
-    //confirm if password is correct
-    if (validPass.test(passWord)) {
-
-      // alert(`correct password`);
-      password.value = " ";
-      // firstInput.value = " ";
-      // lastName.value = " ";
-      // userInput.value = " ";
-      //  password.value = " ";
-    } else {
-      lastInput = lastName.value;
-      validUser = userInput.value;
-      passWord = password.value;
-      
-      pass.textContent = `**Must contain at least a symbol, alphabet and number`
-    }
-
-    //// check if password match with confirm password
-    let confirmPass = confirmPassword.value;
-
-    if (confirmPass === passWord) {
-      confirmPassword.value = " ";
-    } else {
-      confPass.textContent = `***Please enter the correct password`;
-    }
   }
+  else {
+    lastInput = lastName.value;
+    validUser = userInput.value;
+    passWord = password.value;
+
+    pass.textContent = `**Must contain at least a symbol, alphabet and number`;
+  }
+
+  //// check if password match with confirm password
+  // let confirmPass = confirmPassword.value;
+
+  if (confirmPass === passWord) {
+    confirmPassword.value = "";
+  } else {
+    confPass.textContent = `***Please enter the correct password`;
+    confirmPass = confirmPassword.value;
+     passWord = password.value;
+  }
+};
 ///// ADDING EYE-OPERNER TO THE PASSWORD/////
 
 eyeopener.addEventListener("click", () => {
@@ -127,7 +123,5 @@ eyeopener.addEventListener("click", () => {
   } else {
     password.type = "password";
     eyeopener.innerHTML = "&#128065";
-  } 
+  }
 });
-
-
