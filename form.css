@@ -56,12 +56,12 @@
     padding-top: 5rem;
 }
 /* PARAGRAPH */
-#para, #pass, #conf-pass{
+#user-name-error, #password-error, #confirm-pass-error{
     font-size: .9rem;
     color: red;
     padding-left: .6rem;
 }
-#pass{
+#password-error{
     padding-left: 7rem;
 }
 .name {
