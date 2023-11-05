@@ -10,6 +10,7 @@ const confirmPassword = document.querySelector(".confirm-pass");
 const passwordError = document.querySelector(".password-error");
 const confirmPasswordError = document.querySelector(".confirm-pass-error");
 
+
 // Submit Button Event Listener
 signIn.addEventListener("click", () => {
   validateNames();
@@ -48,7 +49,6 @@ const validateUserName = () => {
       "Username must include both letters and numbers enter the firstname and lastname again";
   }
 };
-
 // Function to Validate Password
 const validatePasswords = () => {
   // Regular expression to validate the password pattern
