@@ -5,6 +5,7 @@
 - [Overview](#overview)
 - [Variable Naming](#variable-declaration)
 - [Responsive Design](#responsive-design)
+-[Feedback](#feedback)
 
 
 ## Overview
@@ -32,3 +33,6 @@ In this section, I'll provide tips for improving responsiveness.
 - Media Queries: Both mobile and desktop displays have alignment issues with input boxes, the sign-in button, and the container. Consider using flexbox since you have a container to address these alignment issues.
 
 - Media Queries: Desktop and Mobile display have been adjusted base on your observation.
+
+## Feedback
+- All observation have been taken into consideration and has been looked into.
