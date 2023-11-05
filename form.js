@@ -1,14 +1,14 @@
 // DOM Elements
-const firstName = document.querySelector("#first-name");
-const lastName = document.querySelector("#last-name");
-const signIn = document.querySelector("#submit");
-const userName = document.querySelector("#User-name");
-const userNameError = document.querySelector("#user-name-error");
-const password = document.querySelector("#pass-word");
-const showPassword = document.querySelector("#eye-open");
-const confirmPassword = document.querySelector("#confirm-pass");
-const passwordError = document.querySelector("#password-error");
-const confirmPasswordError = document.querySelector("#confirm-pass-error");
+const firstName = document.querySelector(".first-name");
+const lastName = document.querySelector(".last-name");
+const signIn = document.querySelector(".submit");
+const userName = document.querySelector(".User-name");
+const userNameError = document.querySelector(".user-name-error");
+const password = document.querySelector(".pass-word");
+const showPassword = document.querySelector(".eye-open");
+const confirmPassword = document.querySelector(".confirm-pass");
+const passwordError = document.querySelector(".password-error");
+const confirmPasswordError = document.querySelector(".confirm-pass-error");
 
 // Submit Button Event Listener
 signIn.addEventListener("click", () => {
@@ -43,6 +43,7 @@ const validateUserName = () => {
   if (usernameRegex.test(userNameInput)) {
     userNameError.style.display = "none"; // Hide the error message
   } else {
+    userNameInput = userName.value;
     userNameError.textContent =
       "Username must include both letters and numbers";
   }
