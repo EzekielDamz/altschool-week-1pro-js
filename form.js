@@ -45,7 +45,7 @@ const validateUserName = () => {
   } else {
     userNameInput = userName.value;
     userNameError.textContent =
-      "Username must include both letters and numbers";
+      "Username must include both letters and numbers enter the firstname and lastname again";
   }
 };
 

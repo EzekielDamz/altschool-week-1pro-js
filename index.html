@@ -13,42 +13,62 @@
   <body>
     <main class="form-body">
       <div class="content">
-        <h1 class="header">Sign In Here</h1>
-
-        <label for="First name" class="name">First Name : </label>
-        <input
-          type="text"
-          placeholder=" enter firstname"
-          id="first-name"
-          required
-        /><br />
+        <h1 class="header">Sign In</h1>
+        <div class="icon">
+<i class="fa fa-user-circle-o"></i>
+        </div>
+          
+        <div class="firstName">
+          <label for="First name" class="name">First Name : </label>
+          <br />
+          <input
+            type="text"
+            placeholder=" enter firstname"
+            class="first-name"
+            required
+          />
+        </div>
         <br />
-        <label for="text " class="name">Last Name : </label>
-        <input
-          type="text"
-          placeholder=" enter lastname"
-          id="last-name"
-          required
-        />
-        <br /><br />
-        <label for="username" class="name"> User Name :</label>
-        <input type="text" placeholder="enter username" id="User-name" />
-        <p id="user-name-error"></p>
-        <br />
+        <div class="lastName">
+          <label for="text " class="name">Last Name : </label>
+          <input
+            type="text"
+            placeholder=" enter lastname"
+            class="last-name"
+            required
+          />
+        </div>
         <br>
-        <label for="password" class="name"> Password : </label>
-          <input type="password" placeholder="enter password " id="pass-word" />
-          <span id="eye-open">&#128065;</span>
-          <p id="password-error"></p>
-          <!-- <i class="fa fa-eye" id="eye-open"></i> -->
+        <div class="userName">
+          <label for="username" class="name"> User Name :</label>
+          <input type="text" placeholder="enter username" class="User-name" />
+          <p class="user-name-error"></p>
+        </div>
         <br />
-        <br>
-
-        <label for="confirmPassword" class="name"> Confirm Password : </label>
-        <input type="password" placeholder="confirm your password" id="confirm-pass" />
-        <p id="confirm-pass-error"></p>
+        <div class="passWord">
+          <label for="password" class="name"> Password : </label>
+          <input
+            type="password"
+            placeholder="enter password "
+            class="pass-word"
+          />
+          <span class="eye-open">&#128065;</span>
+          <p class="password-error"></p>
+        </div>
         <br />
-        <input type="submit" value="Sign In" id="submit" />
+        <div class="confirmPass">
+          <label for="confirmPassword" class="name"> Confirm Password : </label
+          ><br />
+          <input
+            type="password"
+            placeholder="confirm your password"
+            class="confirm-pass"
+          />
+          <p id="confirm-pass-error"></p>
+        </div>
+        <div class="submit-here">
+          <input type="submit" value="Sign In" class="submit" />
+        </div>
       </div>
     </main>
   </body>
