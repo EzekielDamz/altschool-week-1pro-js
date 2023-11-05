@@ -2,16 +2,17 @@
     padding: 0;
     margin: 0;
 }
-body{
- width: 100%;
+
+body {
+    width: 100%;
 }
 
-/* container */
+/* CONTAINER */
 
 .form-body {
-display: flex;
-justify-content: center;
-align-items: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     width: 60%;
     height: 90%;
     background-color: rgb(223, 217, 217);
@@ -31,14 +32,14 @@ align-items: center;
     text-align: center;
     padding-top: 2rem;
 }
-/* User Icon */
-.icon{
+
+/*USER ICON*/
+.icon {
     display: flex;
     justify-content: center;
     align-content: center;
     color: rgb(110, 24, 24);
     font-size: 5rem;
-
 }
 
 /* INPUT FIELD */
@@ -53,47 +54,55 @@ align-items: center;
     /* text-align: center; */
     font-size: 1rem;
     border-radius: .5rem;
-    border:none;
+    border: none;
 }
 
-.pass-word{
+.pass-word {
     width: 80%;
+    height: 2rem;
+    /* padding-left: 1rem; */
+    /* text-align: center; */
+    font-size: 1rem;
+    border-radius: .5rem;
+    border: none;
+}
+/* MEDIA QUERY FOR INPUT */
+@media (max-width:750px) {
+
+    .first-name,
+    .last-name,
+    .User-name,
+    .pass-word,
+    .confirm-pass {
+        width: 50%;
         height: 2rem;
-        /* padding-left: 1rem; */
-        /* text-align: center; */
+        padding-left: 1rem;
+        margin-top: .5rem;
         font-size: 1rem;
         border-radius: .5rem;
         border: none;
-}
-@media (max-width:750px) {
-    .first-name,
-        .last-name,
-        .User-name,
-        .pass-word,
-        .confirm-pass {
-            width: 50%;
-            height: 2rem;
-            padding-left: 1rem;
-         margin-top: .5rem;
-            font-size: 1rem;
-            border-radius: .5rem;
-            border: none;
-        }
-        .confirmPass,.firstName{
-            display: flex;
-        }
+    }
+
+    .confirmPass,
+    .firstName {
+        display: flex;
+    }
 }
 
 
 /* PARAGRAPH */
-.user-name-error, .password-error, .confirm-pass-error{
+.user-name-error,
+.password-error,
+.confirm-pass-error {
     font-size: .9rem;
     color: red;
     padding-left: .6rem;
 }
-.password-error{
+
+.password-error {
     padding-left: 7rem;
 }
+
 .name {
     padding-right: 1.5rem;
     font-family: "Helvetica Neue",
@@ -104,9 +113,10 @@ align-items: center;
     color: rgb(110, 24, 24);
     font-weight: bolder;
 }
-/****** Label Mobile View ******/
-@media (max-width:800px){
-.name {
+
+/****** LABEL MEDIA QUERY ******/
+@media (max-width:800px) {
+    .name {
         padding-left: 3rem;
         margin-top: 1rem;
         font-family: "Helvetica Neue",
@@ -118,35 +128,38 @@ align-items: center;
         font-weight: bolder;
     }
 }
-.submit-here{
+
+.submit-here {
     display: flex;
     justify-content: center;
 }
+
 .submit {
     padding: .5rem 10rem;
     margin-bottom: 3rem;
     margin-top: 3rem;
-    background-color:rgb(110, 24, 24 );
+    background-color: rgb(110, 24, 24);
     /* background-color:chartreuse; */
     color: whitesmoke;
     border: none;
     font-size: 2rem;
 }
-@media (max-width:800px){
-.submit {
-      align-content: center;
+/* SUBMIT MEDIA QUERY */
+@media (max-width:800px) {
+    .submit {
+        align-content: center;
         padding: .5rem 3rem;
         margin-bottom: 3rem;
         margin-top: 3rem;
         /* background-color: chartreuse; */
-    color: whitesmoke;
+        color: whitesmoke;
         border: none;
         font-size: 1.3rem;
     }
 }
-.eye-open{
+
+.eye-open {
     margin-left: -2rem;
     color: rgb(110, 24, 24);
     cursor: pointer;
 }
-
