@@ -18,13 +18,20 @@ body {
     background-color: rgb(223, 217, 217);
     /* background: linear-gradient(to right, skyblue, yellow); */
     margin: 1rem auto;
-    border-radius: 3rem;
+    border-radius: 1rem;
     font-family: "Helvetica Neue",
         Helvetica,
         Arial,
         sans-serif;
     font-weight: 300;
 }
+/* FORM BODY MEDIA QUERY */
+@media (max-width:750px){
+    .form-body{
+        margin: 1rem 5rem;
+    }
+}
+
 
 .header {
     color: rgb(110, 24, 24);
@@ -40,14 +47,21 @@ body {
     align-content: center;
     color: rgb(110, 24, 24);
     font-size: 5rem;
+    margin-bottom: 2rem;
 }
 
+@media (max-width:750px){
+    .icon{
+        margin-bottom: .5rem;
+    }
+}
 /* INPUT FIELD */
 .first-name,
 .last-name,
 .User-name,
 .pass-word,
-.confirm-pass {
+.confirm-pass,
+.email{
     width: 80%;
     height: 2rem;
     padding-left: 2rem;
@@ -68,21 +82,22 @@ body {
 }
 /* MEDIA QUERY FOR INPUT */
 @media (max-width:750px) {
-
     .first-name,
     .last-name,
     .User-name,
     .pass-word,
-    .confirm-pass {
+    .confirm-pass,.email {
         width: 50%;
         height: 2rem;
-        padding-left: 1rem;
+        padding-left: .3rem;
         margin-top: .5rem;
         font-size: 1rem;
         border-radius: .5rem;
         border: none;
     }
-
+ .email{
+    width: 60%;
+ }
     .confirmPass,
     .firstName {
         display: flex;
@@ -99,9 +114,7 @@ body {
     padding-left: .6rem;
 }
 
-.password-error {
-    padding-left: 7rem;
-}
+
 
 .name {
     padding-right: 1.5rem;
@@ -117,7 +130,7 @@ body {
 /****** LABEL MEDIA QUERY ******/
 @media (max-width:800px) {
     .name {
-        padding-left: 3rem;
+        padding-left: .8rem;
         margin-top: 1rem;
         font-family: "Helvetica Neue",
             Helvetica,
@@ -135,14 +148,15 @@ body {
 }
 
 .submit {
-    padding: .5rem 10rem;
+    padding: .5rem 5rem;
     margin-bottom: 3rem;
     margin-top: 3rem;
     background-color: rgb(110, 24, 24);
     /* background-color:chartreuse; */
     color: whitesmoke;
     border: none;
-    font-size: 2rem;
+    border-radius: 1rem;
+    font-size: 1.5rem;
 }
 /* SUBMIT MEDIA QUERY */
 @media (max-width:800px) {
